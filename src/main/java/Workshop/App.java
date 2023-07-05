@@ -41,8 +41,13 @@ public class App {
                 }
                 case '/': {
                     double result4 = num1 / num2;
-                    System.out.println(num1 + " / " + num2 + " = " + result4);
-                    break;
+                    if (num2 != 0){
+                        System.out.println(num1 + " / " + num2 + " = " + result4);
+                        break;
+                    }else{
+                        System.out.println("You can't divide on Zero!");
+                        break;
+                    }
                 }
                 default:
                     System.out.println("You have chosen a wrong operation, this value {" + operation + "} is not supported" );
