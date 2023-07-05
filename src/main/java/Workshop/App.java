@@ -13,7 +13,7 @@ public class App {
             System.out.println("Please type the first number:");
             double num1 = scanner.nextDouble();
 
-            System.out.println("Please choose the operation:");
+            System.out.println("Please choose the operation (+ , - , * , / ) or type 'q' to exit the program: ");
             char operation = scanner.next().charAt(0);
 
             System.out.println("Please type the second number:");
@@ -23,26 +23,33 @@ public class App {
                 break;
             }
 
-             switch (operation) {
-                 case '+':
-                     double result = num1 + num2;
-                     System.out.println(num1 + " + " + num2 + " = " + result);
-                     break;
-                 case '-':
-                     double result2 = num1 - num2;
-                     System.out.println(num1 + " - " + num2 + " = " + result2);
-                     break;
-                 case '*':
-                     double result3 = num1 * num2;
-                     System.out.println(num1 + " * " + num2 + " = " + result3);
-                     break;
-                 case '/':
-                     double result4 = num1 / num2;
-                     System.out.println(num1 + " / " + num2 + " = " + result4);
-                     break;
-             }
+            switch (operation) {
+                case '+': {
+                    double result = num1 + num2;
+                    System.out.println(num1 + " + " + num2 + " = " + result);
+                    break;
+                }
+                case '-': {
+                    double result2 = num1 - num2;
+                    System.out.println(num1 + " - " + num2 + " = " + result2);
+                    break;
+                }
+                case '*': {
+                    double result3 = num1 * num2;
+                    System.out.println(num1 + " * " + num2 + " = " + result3);
+                    break;
+                }
+                case '/': {
+                    double result4 = num1 / num2;
+                    System.out.println(num1 + " / " + num2 + " = " + result4);
+                    break;
+                }
+                default:
+                    System.out.println("You have chosen a wrong operation, this value {" + operation + "} is not supported" );
+                    break;
+            }
             System.out.println("--------------------------------------------------");
         }
-        System.out.println("Thank you for using my simple calculator :-)");
+        System.out.println(" ..... Thank you for using my simple calculator :-) .....");
     }
 }
