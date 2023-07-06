@@ -72,8 +72,8 @@ public class App {
         System.out.println("Type - for subtraction");
         System.out.println("Type * for multiply");
         System.out.println("Type / for division");
-        System.out.println("Ready to use");
         System.out.println("^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ^-^ ");
+        System.out.println("Ready to use");
     }
 
 }
